@@ -633,4 +633,109 @@ blockquote {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 	
-</style></head><body><article id="52560a6a-0f9d-4c21-a560-3845b38e9a56" class="page sans"><header><h1 class="page-title">Getting started</h1></header><div class="page-body"></div></article></body></html>
+</style></head><body><article id="52560a6a-0f9d-4c21-a560-3845b38e9a56" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">✨</span></div><h1 class="page-title">Getting started</h1></header><div class="page-body"><h1 id="5d390447-4f87-43d8-83c4-ab0322a2b64d" class="">Modeler 다운로드</h1><p id="b9d76096-9b66-4dcd-9fce-dbaaa25d8379" class=""><a href="https://camunda.com/download/modeler/">https://camunda.com/download/modeler/</a> </p><p id="76d0ce5c-f0f5-4ce7-bf2a-d02dcdf52516" class="">
+</p><h1 id="32f37e82-7e29-4495-ace4-34513b42bd01" class="">프로젝트 생성</h1><p id="e39dfbbb-1a51-42f6-b705-0db0535de091" class="">Maven 또는 Gradle 프로젝트를 만듭니다.</p><p id="b60518ce-a40f-4bb8-a78e-7061e6fe6988" class="">
+</p><h3 id="1b2f07e3-6bdc-47f9-9e28-3683041370c4" class="">Eclipse + Maven</h3><ul id="f6ddf07c-d993-4eed-aece-c8854511e91b" class="bulleted-list"><li>File→new→Other.. 선택</li></ul><p id="aef0fa1f-3aa2-45a9-af0e-92fd04b117db" class="">
+</p><ul id="69a26432-66c0-40b2-b1cd-207055452f62" class="bulleted-list"><li>Maven→Maven Project 선택<figure id="d566415e-9e15-4adc-968b-d0ab34f45a88" class="image"><a href="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled.png"><img style="width:702px" src="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled.png"/></a></figure></li></ul><ul id="38b2226a-b3d4-4cda-8f51-8194711ae050" class="bulleted-list"><li><em>Create a simple project</em>에 체크 후 <em>Next</em> 버튼 클릭</li></ul><figure id="967a754a-ed86-4ff4-8677-cbe848e3e1f3" class="image"><a href="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%201.png"><img style="width:664px" src="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%201.png"/></a></figure><ul id="05c78ed8-4d4c-46ff-a060-13c4f299e65f" class="bulleted-list"><li>group id, artifact id 등을 입력 후 <em>Finish</em> 버튼 클릭</li></ul><figure id="ed5ea667-42a1-4fec-b56a-ec63b901160f" class="image"><a href="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%202.png"><img style="width:640px" src="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%202.png"/></a></figure><ul id="348ba7b1-9d90-493b-b0df-6492c59d3b86" class="bulleted-list"><li>resources에 <em>services</em> 디렉토리 추가<figure id="4325ffa2-ee05-4e68-b9dc-cedb1c6d1b71" class="image"><a href="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%203.png"><img style="width:779px" src="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%203.png"/></a></figure></li></ul><h3 id="423b6920-01bb-4b11-a6f5-b196a1b5013c" class="">의존성 추가</h3><p id="3255888c-f5b5-4967-93d2-943623e5ae7f" class="">pom.xml 파일에 oasis-core 의존성을 추가 합니다.</p><pre id="7ac411e2-fcf6-4053-aac2-f881dba82f9f" class="code"><code>&lt;dependency&gt;
+	&lt;groupId&gt;com.dongkuk&lt;/groupId&gt;
+	&lt;artifactId&gt;oasis-core&lt;/artifactId&gt;
+	&lt;version&gt;4.0.0&lt;/version&gt;
+&lt;/dependency&gt;</code></pre><h1 id="647ab2da-f352-4117-a931-d8dd6bd4ae80" class="">Hello 비즈니스 로직 개발</h1><p id="383c7eea-395d-4cbb-9ac8-42576bb96632" class="">간단한 메시지를 출력하는 메소드를 가진 클래스를 만듭니다.</p><p id="767de702-b37e-433e-9191-9b9fd15a1b12" class="">
+</p><h3 id="2bf9dc6b-6c48-49aa-af96-8a96786d0f37" class="">Hello class 생성</h3><p id="ed179c65-1d3f-45f7-8276-6a589a6a8554" class="">
+</p><ul id="763f4782-dd15-4a62-899e-ce06fba80340" class="bulleted-list"><li>src→main→java 에서 new→class 선택<figure id="42d293b8-87a3-4591-9924-94ffba751b48" class="image"><a href="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%204.png"><img style="width:388px" src="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%204.png"/></a></figure></li></ul><p id="15651149-ae37-4ae8-9539-f0871fccfb88" class="">
+</p><ul id="3ca3044d-ffdf-4961-8ba9-1bb92df84ce7" class="bulleted-list"><li><em>package</em> 와 <em>name</em> 을 적고 <em>Finish</em> 선택<figure id="839729ec-2c3c-4438-9021-de69e45e2bfa" class="image"><a href="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%205.png"><img style="width:662px" src="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%205.png"/></a></figure></li></ul><ul id="5cb17064-b891-4a24-b7d7-591876f5d6f1" class="bulleted-list"><li>로직 작성</li></ul><figure id="cbb2ee0e-9438-47e3-b5ce-5e86da7c172b"><div class="source"><a></a></div></figure><pre id="84a785c1-3980-4db7-a62d-1ee739e47d12" class="code"><code>package oasis;
+
+public class Hello {
+	public void greeting(String name) {
+		System.out.println(name + &quot;! Hello.&quot;);
+	}
+}</code></pre><h1 id="0dcd9731-c22c-4e28-bc36-9f6a428d97e2" class="">모델 작성</h1><h3 id="8f7d05ce-b876-4e1d-994b-5393906bf73c" class="">모델 그리기</h3><ul id="e3a38b74-5d9e-4f19-b75f-9a24f66690b1" class="bulleted-list"><li>다운 받은 모델러를 실행해서 <em>BPMN diagram (Camunda Platform)</em> 선택<figure id="8f6a18c5-7154-4757-ae47-16eaefef4b80" class="image"><a href="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%206.png"><img style="width:866px" src="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%206.png"/></a></figure></li></ul><ul id="5edff4f4-30da-4f16-82a1-361808b104ae" class="bulleted-list"><li>시작 이벤트의 이름을 변경하고 Task를 추가<figure id="3d5c3b90-6d82-47dd-a6eb-a2c15a37c868" class="image"><a href="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%207.png"><img style="width:1504px" src="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%207.png"/></a></figure></li></ul><ul id="e0f8d6eb-68af-47cf-93a5-d486f2a2a62d" class="bulleted-list"><li>추가한 Task에 이름을 변경<figure id="dbac92d3-b67e-4e8c-a6a4-3e3c3d072d5d" class="image"><a href="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%208.png"><img style="width:1896px" src="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%208.png"/></a></figure></li></ul><ul id="0a1cb5f4-d974-4bf6-833e-97118674f6b1" class="bulleted-list"><li>Task 타입을 랜치 모양 아이콘을 눌러 Service Task 로 변경<figure id="50d945d1-24e9-41f5-bca0-e5444c0bbb77" class="image"><a href="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%209.png"><img style="width:948px" src="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%209.png"/></a></figure></li></ul><ul id="28b911b2-b0a3-4489-89b5-26e944c9e063" class="bulleted-list"><li>End Event 를 추가하여 끝임을 알림<figure id="256743f9-f43b-43eb-96f4-4add250c94b9" class="image"><a href="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%2010.png"><img style="width:964px" src="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%2010.png"/></a></figure></li></ul><h3 id="d306d9b4-2561-471d-9e5a-08ba4603a245" class="">Service Task 설정</h3><ul id="6b574d49-2ef4-4170-bbb3-05f0e1ff707d" class="bulleted-list"><li>Java Class 를 실행하기 위해 설정을 변경하고 실행할 클래스 입력<figure id="aa2f2db8-3d18-4d57-83a3-23a815fdf339" class="image"><a href="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%2011.png"><img style="width:1868px" src="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%2011.png"/></a></figure></li></ul><ul id="1a302b35-a6ce-48cc-a289-4a3460af286f" class="bulleted-list"><li>실행할 메소드 이름을 입력<figure id="33882c1c-1f29-407f-8cab-2feaec1b4500" class="image"><a href="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%2012.png"><img style="width:1868px" src="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%2012.png"/></a></figure></li></ul><ul id="2614f696-ca5d-4e21-b736-0ccd00c2cffb" class="bulleted-list"><li>resources/services 에 모델 저장<figure id="44f5c9b9-5b7f-473a-a0a6-c4b40dbc4d58" class="image"><a href="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%2013.png"><img style="width:964px" src="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%2013.png"/></a></figure></li></ul><h1 id="24474c59-5b0c-4110-822f-9a92c7c4e056" class=""> 서비스를 실행할 클라이언트 만들기</h1><ul id="b91a80c0-4b38-4c3e-8fc3-fd1cee62609e" class="bulleted-list"><li>main 메소드를 포함하는 Main class 만들기<figure id="e726d5a2-1434-41a3-a439-5fcf583197ba" class="image"><a href="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%2014.png"><img style="width:702px" src="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%2014.png"/></a></figure></li></ul><ul id="3cf13040-37de-46d3-bdfa-333db112f1b4" class="bulleted-list"><li>my-first-oasis 서비스를 실행하는 main 메소드 작성</li></ul><pre id="6ecdaa38-8a54-4986-98ad-1ff5dc427d45" class="code"><code>package oasis;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.dongkuk.oasis.TypedObject;
+import com.dongkuk.oasis.context.DefaultServiceContext;
+import com.dongkuk.oasis.context.ServiceContext;
+import com.dongkuk.oasis.factories.NonTransactionalServiceStarterFactory;
+import com.dongkuk.oasis.service.ServiceStarter;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ServiceStarter serviceStarter = 
+				new NonTransactionalServiceStarterFactory().generateServiceStarter();
+
+		// Build input values
+		Map&lt;String, TypedObject&gt; input = new HashMap&lt;&gt;();
+		input.put(&quot;name&quot;, new TypedObject(&quot;dongkuk&quot;));
+
+		// Make service context
+		ServiceContext serviceContext = new DefaultServiceContext(input);
+
+		serviceStarter.start(&quot;my-first-oasis&quot;, serviceContext);
+	}
+}</code></pre><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="426a9f6c-e5cb-4fdb-8ab3-e4fe67e82906"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><em>my-first-oasis</em> 는 서비스ID 이자 bpmn 파일명입니다. Modeler에서 저장한 이름을 사용하세요.</div></figure><h1 id="4c1ad3a4-5d86-4784-a293-c27dc24b52f2" class="">실행결과</h1><p id="892ccb96-67af-4a6b-87f9-84eb98b7dd2f" class="">Hello class 의 greeting 메소드가 main 메소드에서 만들어 넣은 파라미터를 받아 실행된다.</p><figure id="26e2f134-fe78-4641-a15b-dd674e3824d6" class="image"><a href="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%2015.png"><img style="width:1079px" src="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%2015.png"/></a></figure><h3 id="b86ad72a-81b7-4036-9de1-68d3a17df438" class="">로그 자세히 보기</h3><p id="b9e49634-055b-4a1d-b52e-b380c5e59721" class="">log4j, logback 등 slf4j 를 구현하는 로깅 프레임워크를 프로젝트 의존성에 추가하면 실행 결과를 자세히 볼 수 있습니다.</p><p id="070998d5-2ead-464a-8e54-10256ae8c3dd" class="">pom.xml</p><pre id="ac3d8831-5aba-4774-9c31-7bb4ebc5337d" class="code"><code>&lt;dependency&gt;
+			&lt;groupId&gt;org.apache.logging.log4j&lt;/groupId&gt;
+			&lt;artifactId&gt;log4j-core&lt;/artifactId&gt;
+			&lt;version&gt;2.13.2&lt;/version&gt;
+		&lt;/dependency&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.apache.logging.log4j&lt;/groupId&gt;
+			&lt;artifactId&gt;log4j-slf4j-impl&lt;/artifactId&gt;
+			&lt;version&gt;2.13.2&lt;/version&gt;
+&lt;/dependency&gt;</code></pre><p id="9bb4542c-0829-46c1-aa6e-29ed75fcff14" class="">
+</p><ul id="ab09c6b3-c8e7-4012-8e8f-8afda6a2e0b9" class="bulleted-list"><li>log4j2 설정 파일 추가</li></ul><p id="bffcf978-47ee-458b-b810-b5a092508be3" class="">resource 에 <em>log4j2.xml</em> 설정파일 추가</p><pre id="fb5e3e2f-b367-4589-b197-270c12b18807" class="code"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;Configuration status=&quot;warn&quot;&gt;
+    &lt;Appenders&gt;
+        &lt;Console name=&quot;Console&quot; target=&quot;SYSTEM_OUT&quot;&gt;
+            &lt;PatternLayout pattern=&quot;%d{DEFAULT} [%t] %-5level %logger{36} - %msg%n&quot;/&gt;
+        &lt;/Console&gt;
+    &lt;/Appenders&gt;
+    &lt;Loggers&gt;
+        &lt;logger level=&quot;TRACE&quot; name=&quot;org.springframework.jdbc.core.StatementCreatorUtils&quot; additivity=&quot;false&quot;&gt;
+            &lt;AppenderRef ref=&quot;Console&quot;/&gt;
+        &lt;/logger&gt;
+        &lt;logger level=&quot;debug&quot; name=&quot;org.springframework.jdbc.core.JdbcTemplate&quot; additivity=&quot;false&quot;&gt;
+            &lt;AppenderRef ref=&quot;Console&quot;/&gt;
+        &lt;/logger&gt;
+        &lt;logger name=&quot;org.hibernate.SQL&quot; level=&quot;debug&quot; additivity=&quot;false&quot;&gt;
+            &lt;AppenderRef ref=&quot;Console&quot;/&gt;
+        &lt;/logger&gt;
+        &lt;logger name=&quot;org.hibernate.cfg.Settings&quot; level=&quot;info&quot; additivity=&quot;false&quot;&gt;
+            &lt;AppenderRef ref=&quot;Console&quot;/&gt;
+        &lt;/logger&gt;
+        &lt;logger name=&quot;org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory&quot; level=&quot;info&quot;
+                additivity=&quot;false&quot;&gt;
+            &lt;AppenderRef ref=&quot;Console&quot;/&gt;
+        &lt;/logger&gt;
+        &lt;logger name=&quot;org.hibernate.type.BasicTypeRegistry&quot; level=&quot;info&quot; additivity=&quot;false&quot;&gt;
+            &lt;AppenderRef ref=&quot;Console&quot;/&gt;
+        &lt;/logger&gt;
+        &lt;logger name=&quot;test&quot; level=&quot;trace&quot; additivity=&quot;false&quot;&gt;
+            &lt;AppenderRef ref=&quot;Console&quot;/&gt;
+        &lt;/logger&gt;
+        &lt;Root level=&quot;debug&quot;&gt;
+            &lt;AppenderRef ref=&quot;Console&quot;/&gt;
+        &lt;/Root&gt;
+    &lt;/Loggers&gt;
+&lt;/Configuration&gt;</code></pre><p id="fcec6848-30d2-47f2-946e-7bc7c4ab3d87" class="">
+</p><ul id="246c163a-1159-4187-b8e3-8471bcfe8b9c" class="bulleted-list"><li>실행결과</li></ul><pre id="824f8dc7-ea88-4946-bc83-d3094e8526f8" class="code"><code>2021-08-06 17:10:18,579 [main] INFO  com.dongkuk.oasis.service.CoreServiceStarter - Service [my-first-oasis] start.
+2021-08-06 17:10:18,669 [main] DEBUG com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder - Check element flows : Activity_15w7xcj
+2021-08-06 17:10:18,671 [main] DEBUG com.dongkuk.oasis.unmarshal.camunda.CamundaFlowsStoreBuilder - Check element flows : StartEvent_1
+2021-08-06 17:10:18,685 [main] INFO  com.dongkuk.oasis.process.CoreProcessStarter - Process [Process_06zx1o7](Process_06zx1o7) start.
+2021-08-06 17:10:18,686 [main] INFO  com.dongkuk.oasis.model.event.DefaultStartEvent - Task [StartEvent_1](Hello 시작) start.
+2021-08-06 17:10:18,688 [main] INFO  com.dongkuk.oasis.model.event.DefaultStartEvent - Task [StartEvent_1](Hello 시작) finish.(1ms)
+2021-08-06 17:10:18,689 [main] INFO  com.dongkuk.oasis.model.activity.JavaServiceTask - Task [Activity_15w7xcj](인사하기) start.
+2021-08-06 17:10:18,697 [main] INFO  com.dongkuk.oasis.executors.PlainJavaServiceTaskExecutable - Invoking class : [oasis.Hello], method : [greeting]
+2021-08-06 17:10:18,732 [main] DEBUG io.github.thecodinglog.methodinvoker.ParameterNameMethodArgumentBindingStrategy - Parameter name binding of name
+dongkuk! Hello.
+2021-08-06 17:10:18,733 [main] INFO  com.dongkuk.oasis.model.activity.JavaServiceTask - Task [Activity_15w7xcj](인사하기) finish.(44ms)
+2021-08-06 17:10:18,734 [main] INFO  com.dongkuk.oasis.model.event.DefaultEndEvent - Task [Event_1upza2s](Hello 끝) start.
+2021-08-06 17:10:18,734 [main] INFO  com.dongkuk.oasis.model.event.DefaultEndEvent - Task [Event_1upza2s](Hello 끝) finish.(0ms)
+2021-08-06 17:10:18,735 [main] INFO  com.dongkuk.oasis.process.CoreProcessStarter - Process [Process_06zx1o7](Process_06zx1o7) finish.(49ms)
+2021-08-06 17:10:18,735 [main] INFO  com.dongkuk.oasis.service.CoreServiceStarter - Service [my-first-oasis] finish.(152ms)</code></pre><p id="0b8f03c1-035b-4a7b-8d58-01d219a3b495" class="">
+</p><p id="10a71dc0-d318-418c-8403-a05e5aaca019" class="">
+</p><h1 id="c9d9fc3f-da9b-420d-9cdb-7a04c6d4cd20" class="">소스</h1><p id="19c9354a-7b8c-4312-b3f0-a2f5a5097bbf" class="">
+</p><figure id="f66c33ba-b71c-4368-bf5d-aa713dcfb84f"><div class="source"><a href="https://www.notion.so/d6b471c3c5a445dbad0afdac2955950e">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d6b471c3-c5a4-45db-ad0a-fdac2955950e/my-first-oasis.zip</a></div></figure><p id="ced07b50-a0cd-413e-b824-3f11a8b3d6f7" class="">
+</p><h3 id="836eef29-fead-4adb-a4d8-211d1f0485aa" class="">이클립스에서 프로젝트 열기</h3><ul id="6d4e2632-f901-4a68-9743-5d754c3ca09c" class="bulleted-list"><li>워크스페이스에서 마우스 오른쪽 클릭 후 import</li></ul><ul id="e2177a01-3de5-4caf-b578-ea5f35872dfb" class="bulleted-list"><li>maven→Existing Maven Projects 선택<figure id="1f659304-2cdf-487a-9a94-d66cad5f09eb" class="image"><a href="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%2016.png"><img style="width:535px" src="Getting%20started%2052560a6a0f9d4c21a5603845b38e9a56/Untitled%2016.png"/></a></figure></li></ul></div></article></body></html>
